@@ -1,28 +1,28 @@
 # depslib dependency file v1.0
-1603117340 source:/home/andis/Documents/WORK/WorkThisTimePlease/main.cpp
+1604954888 source:/home/andis/Documents/WORK/WorkThisTimePlease/main.cpp
 	<blaze/Math.h>
 	<iostream>
 	"NeuralNetwork.h"
 
-1603118118 source:/home/andis/Documents/WORK/WorkThisTimePlease/src/NeuralNetwork.cpp
+1604955712 source:/home/andis/Documents/WORK/WorkThisTimePlease/src/NeuralNetwork.cpp
 	"NeuralNetwork.h"
-	"Layer.h"
-	<iostream>
-	<cmath>
-	<blaze/Math.h>
-
-1603117194 /home/andis/Documents/WORK/WorkThisTimePlease/include/NeuralNetwork.h
-	<blaze/Math.h>
-	"NeuralNetwork.h"
-	"Layer.h"
-
-1603117378 source:/home/andis/Documents/WORK/WorkThisTimePlease/src/Layer.cpp
 	"Layer.h"
 	<iostream>
 	<cmath>
 	<blaze/Math.h>
 
-1603118178 /home/andis/Documents/WORK/WorkThisTimePlease/include/Layer.h
+1604955052 /home/andis/Documents/WORK/WorkThisTimePlease/include/NeuralNetwork.h
+	<blaze/Math.h>
+	"NeuralNetwork.h"
+	"Layer.h"
+
+1604955696 source:/home/andis/Documents/WORK/WorkThisTimePlease/src/Layer.cpp
+	"Layer.h"
+	<iostream>
+	<cmath>
+	<blaze/Math.h>
+
+1604955696 /home/andis/Documents/WORK/WorkThisTimePlease/include/Layer.h
 	<blaze/Math.h>
 	"Layer.h"
 

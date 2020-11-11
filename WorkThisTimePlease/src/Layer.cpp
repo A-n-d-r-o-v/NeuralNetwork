@@ -106,10 +106,25 @@ blaze::DynamicVector<float> Layer::activationDerivative() {
     }
 }
 
-//ostream &operator<<(ostream &os, const Layer &layer) {
+void Layer::print() {
+    std::cout << std::endl;
+    std::cout << "--- NEURONS ---" << std::endl;
+    std::cout << neuronLayer << std::endl << std::endl;
 
-//    os << layer.weightLayer.
-//    return os; // LOL.
-//}
+    std::cout << "--- WEIGHTS ---" << std::endl;
+    std::cout << weightMatrix << std::endl << std::endl;
+}
+
+/*
+std::ostream &operator<<(std::ostream &os, const Layer &layer) {
+
+    os << std::endl;
+    os << "--- NEURONS ---" << std::endl;
+    os << layer.neuronLayer << std::endl << std::endl;
+
+    os << "--- WEIGHTS ---" << std::endl;
+    os << layer.weightMatrix << std::endl << std::endl;
+    return os;
+}*/
 
 

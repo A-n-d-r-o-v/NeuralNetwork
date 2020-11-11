@@ -4,14 +4,18 @@
 
 int main()
 {
-    blaze::DynamicVector<float> inputVector;
     NeuralNetwork* test = new NeuralNetwork(0.05f);
 
-    test->addLayer(5, Layer::ActivationFunction::ReLu); // Input layer.
+    test->addLayer(1, Layer::ActivationFunction::ReLu); // Input layer.
     test->addLayer(3, Layer::ActivationFunction::Sigmoid); // Hidden 1.
     test->addLayer(2, Layer::ActivationFunction::Softmax); // Hidden 1.
 
+
+    blaze::DynamicVector<float> inputVector {69};
+    test->setInputs(inputVector);
     test->feedForward();
+
+    std::cout << *test;
     // Dataset loader
 
     // create NN layers (dimensions, activation functions etc)

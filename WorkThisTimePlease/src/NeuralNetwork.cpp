@@ -29,6 +29,10 @@ void NeuralNetwork::addLayer(const uint16_t &_size, Layer::ActivationFunction ac
     layers.push_back(layer);
 }
 
+void NeuralNetwork::setInputs(blaze::DynamicVector<float> inputVec) {
+    layers[0]->neuronLayer = inputVec;
+}
+
 /*
  * Feed forward.
  */
@@ -41,4 +45,16 @@ void NeuralNetwork::feedForward() {
 
 float NeuralNetwork::loss() {
     // expected value, estimated value, yada yada yada
+}
+
+std::ostream &operator<<(std::ostream &os, const NeuralNetwork &neuralNetwork) {
+
+    os << std::endl;
+    for (int i = 0; i < neuralNetwork.layers.size(); ++i) {
+        os << "===== LAYER " << i << " =====" << std::endl;
+        neuralNetwork.layers[i]->print();
+    }
+    os << std::endl;
+
+    return os;
 }

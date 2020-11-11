@@ -17,6 +17,7 @@ class Layer
         void feedForward(Layer &prevLayer);
         void activate();
         blaze::DynamicVector<float> activationDerivative();
+        void print();
 
     protected:
 
